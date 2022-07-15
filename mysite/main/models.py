@@ -9,4 +9,8 @@ class Task (models.Model):     #наследование от models.Model
 
     def __str__(self):
         return self.title  
+    
+    class Meta:
+        verbose_name = 'Задача'   #имя в немножественном числе 
+        verbose_name_plural = 'Задачи'   #имя во множественном числе 
 
